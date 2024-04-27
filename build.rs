@@ -1,9 +1,9 @@
-fn main() -> Result<(), Box<dyn std:error:Error>> {
+fn main() -> Result<(), Box<dyn std::error::Error>> {
     tonic_build::configure()
         .build_server(true)
         .compile(
-            &["proto/servies.proto"],
-            &["proto"]
+            &["proto/services.proto"],
+            &["proto"],
         )?;
     Ok(())
 } 

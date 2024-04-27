@@ -8,7 +8,7 @@ service PaymentService {
 }
 
 // Service for checking transaction history
-services TransactionService {
+service TransactionService {
     rpc GetTransactionHistory(TransactionRequest) returns (stream TransactionResponse);
 }
 
